@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-09T00:11:18 EET" name="Default suite" finished-at="2023-01-09T00:11:53 EET" duration-ms="35132">
+    <groups>
+    </groups>
+    <test started-at="2023-01-09T00:11:18 EET" name="Default test" finished-at="2023-01-09T00:11:53 EET" duration-ms="35132">
+      <class name="nopCommerce.FromRegistrationToCheckout">
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-01-09T00:11:18 EET" name="OpenURL" finished-at="2023-01-09T00:11:23 EET" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenURL -->
+        <test-method signature="RegisterNewAccount()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-01-09T00:11:24 EET" name="RegisterNewAccount" finished-at="2023-01-09T00:11:28 EET" duration-ms="4410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewAccount -->
+        <test-method signature="LoginPage()[pri:1, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-01-09T00:11:28 EET" name="LoginPage" finished-at="2023-01-09T00:11:30 EET" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="BuyBook()[pri:2, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-01-09T00:11:30 EET" name="BuyBook" finished-at="2023-01-09T00:11:53 EET" duration-ms="23185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BuyBook -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-01-09T00:11:53 EET" name="CloseBrowser" finished-at="2023-01-09T00:11:53 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- nopCommerce.FromRegistrationToCheckout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
