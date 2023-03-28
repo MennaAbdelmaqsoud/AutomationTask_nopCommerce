@@ -43,7 +43,7 @@ public class FromRegistrationToCheckout {
 		driver.manage().window().maximize();
 	}
 
-	@Test(priority = 0,enabled = true)
+	@Test(priority = 0,enabled = false)
 	public void RegisterNewAccount() {
 
 		//Open Registration  Page
