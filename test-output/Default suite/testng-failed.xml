@@ -6,7 +6,9 @@
       <class name="nopCommerce.FromRegistrationToCheckout">
         <methods>
           <include name="OpenURL"/>
+          <include name="RegisterNewAccount"/>
           <include name="CloseBrowser"/>
+          <include name="LoginPage"/>
           <include name="BuyBook"/>
         </methods>
       </class> <!-- nopCommerce.FromRegistrationToCheckout -->
