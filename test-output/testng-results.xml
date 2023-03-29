@@ -1,117 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-29T00:12:05 EET" name="Default suite" finished-at="2023-03-29T00:12:07 EET" duration-ms="1888">
+  <suite started-at="2023-03-29T02:30:21 EET" name="Default suite" finished-at="2023-03-29T02:30:56 EET" duration-ms="34763">
     <groups>
     </groups>
-    <test started-at="2023-03-29T00:12:05 EET" name="Default test" finished-at="2023-03-29T00:12:07 EET" duration-ms="1888">
+    <test started-at="2023-03-29T02:30:21 EET" name="Default test" finished-at="2023-03-29T02:30:56 EET" duration-ms="34763">
       <class name="nopCommerce.FromRegistrationToCheckout">
-        <test-method is-config="true" signature="OpenURL()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-03-29T00:12:05 EET" name="OpenURL" finished-at="2023-03-29T00:12:07 EET" duration-ms="1843" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:156)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at nopCommerce.FromRegistrationToCheckout.OpenURL(FromRegistrationToCheckout.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@5824a83d]" started-at="2023-03-29T02:30:21 EET" name="OpenURL" finished-at="2023-03-29T02:30:26 EET" duration-ms="5333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenURL -->
-        <test-method signature="RegisterNewAccount()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-03-29T00:12:07 EET" name="RegisterNewAccount" finished-at="2023-03-29T00:12:07 EET" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="RegisterNewAccount()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@5824a83d]" started-at="2023-03-29T02:30:26 EET" name="RegisterNewAccount" finished-at="2023-03-29T02:30:29 EET" duration-ms="2089" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
+              <![CDATA[Unable to locate element: /html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5f3458e1-b251-4207-8a62-33b552507d09, findElement {using=xpath, value=/html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:2727, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23360, moz:profile: C:\Users\MENATA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:2727/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f3458e1-b251-4207-8a62-33b552507d09]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5f3458e1-b251-4207-8a62-33b552507d09, findElement {using=xpath, value=/html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:2727, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23360, moz:profile: C:\Users\MENATA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:2727/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f3458e1-b251-4207-8a62-33b552507d09
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:156)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at nopCommerce.FromRegistrationToCheckout.OpenURL(FromRegistrationToCheckout.java:41)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+at nopCommerce.FromRegistrationToCheckout.RegisterNewAccount(FromRegistrationToCheckout.java:110)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
@@ -127,135 +79,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewAccount -->
-        <test-method signature="LoginPage()[pri:1, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-03-29T00:12:07 EET" name="LoginPage" finished-at="2023-03-29T00:12:07 EET" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:156)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at nopCommerce.FromRegistrationToCheckout.OpenURL(FromRegistrationToCheckout.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="LoginPage()[pri:1, instance:nopCommerce.FromRegistrationToCheckout@5824a83d]" started-at="2023-03-29T02:30:29 EET" name="LoginPage" finished-at="2023-03-29T02:30:30 EET" duration-ms="1219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPage -->
-        <test-method signature="BuyBook()[pri:2, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-03-29T00:12:07 EET" name="BuyBook" finished-at="2023-03-29T00:12:07 EET" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
-Current browser version is 111.0.5563.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'AEP-NB-101947', ip: '192.168.30.156'
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:156)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at nopCommerce.FromRegistrationToCheckout.OpenURL(FromRegistrationToCheckout.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="BuyBook()[pri:2, instance:nopCommerce.FromRegistrationToCheckout@5824a83d]" started-at="2023-03-29T02:30:30 EET" name="BuyBook" finished-at="2023-03-29T02:30:56 EET" duration-ms="26084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BuyBook -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@121314f7]" started-at="2023-03-29T00:12:07 EET" name="CloseBrowser" finished-at="2023-03-29T00:12:07 EET" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:nopCommerce.FromRegistrationToCheckout@5824a83d]" started-at="2023-03-29T02:30:56 EET" name="CloseBrowser" finished-at="2023-03-29T02:30:56 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
