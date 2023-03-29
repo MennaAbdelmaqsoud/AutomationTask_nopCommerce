@@ -31,6 +31,12 @@
    	 <scope>test</scope>
 	</dependency>
 
+
+	<dependency>
+		<groupId>DeepDive</groupId>
+		<artifactId>SelenuimWebDriver</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 
   <build>

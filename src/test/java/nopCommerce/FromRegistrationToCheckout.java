@@ -7,9 +7,9 @@ import static org.testng.Assert.assertTrue;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -18,7 +18,8 @@ import org.testng.annotations.Test;
 
 public class FromRegistrationToCheckout {
 
-	ChromeDriver driver;
+	FirefoxDriver driver;
+	//ChromeDriver driver;
 	String Input_FirstName = "Mennatullah";
 	String Input_LastName = "Adelmaqsoud";
 	String Input_Day = "19";
@@ -36,12 +37,21 @@ public class FromRegistrationToCheckout {
 	@BeforeTest
 	public void OpenURL()
 	{
-		String ChromeDriverPath= System.getProperty("user.dir")+"\\Resources\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
-		driver = new ChromeDriver();
+		String FirefoxDriverpath= System.getProperty("user.dir")+"\\Resources\\geckodriver.exe";
+		System.setProperty("webdriver.Firefox.driver", FirefoxDriverpath);
+		driver = new FirefoxDriver();
 		driver.navigate().to("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 	}
+	/*@BeforeTest(enabled = false)
+	public void OpenURL()
+	{
+		String ChromeDriverPath= System.getProperty("user.dir")+"\\Resources\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
+		Chrome_driver = new ChromeDriver();
+		Chrome_driver.navigate().to("https://demo.nopcommerce.com/");
+		Chrome_driver.manage().window().maximize();
+	}*/
 
 	@Test(priority = 0,enabled = true)
 	public void RegisterNewAccount() {
@@ -123,7 +133,13 @@ public class FromRegistrationToCheckout {
 		WebElement Password = driver.findElement(By.id("Password"));
 		Password.sendKeys(Input_Password);
 		//Enter to Login
-		Password.sendKeys(Keys.ENTER);
+		if (isElementPresent(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button"))) {
+			WebElement Login_But = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button"));
+			Login_But.click();
+		}else {
+			org.testng.Assert.fail("Element is not founded");
+		}
+		
 
 	}
 
@@ -138,19 +154,22 @@ public class FromRegistrationToCheckout {
 		Select SortByList = new Select(driver.findElement(By.id("products-orderby")));
 		SortByList.selectByVisibleText(Input_SortBy);
 
+		Thread.sleep(5000);
 		//Select the second item 
-		//WebElement SelectSecondItem = driver.findElement(By.cssSelector(".button-2.add-to-wishlist-button"));
-		//SelectSecondItem.click();
+		WebElement SelectSecondItem = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/div[3]/div[2]/button[1]"));
+		SelectSecondItem.click();
+		
+		
 
-		try {
-			WebElement SelectSecondItem = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/div[3]/div[2]/button[1]"));
+		/*try {
+			WebElement SelectSecondItem = driver.findElement(By.cssSelector("div.item-box:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(1)"));
 			SelectSecondItem.click();
 		}
 		catch (org.openqa.selenium.StaleElementReferenceException ex)
 		{
-			WebElement SelectSecondItem = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/div[3]/div[2]/button[1]"));
+			WebElement SelectSecondItem = driver.findElement(By.cssSelector("div.item-box:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(1)"));
 			SelectSecondItem.click();
-		}
+		}*/
 
 		Thread.sleep(5000);
 		//Close Notifications 
